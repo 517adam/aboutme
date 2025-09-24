@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yuanzhong Chen (Adam) – Personal Website</title>
+    <meta
+      name="description"
+      content="Personal website of Yuanzhong Chen (Adam), a Computer Science and Mathematics student at HKUST interested in machine learning, embodied AI, and medical image analysis research."
+    />
+
+  <link rel="icon" type="image/png" href="./icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Yuanzhong Chen (Adam) – Personal Website"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#c1f4f6" />
+
+    <meta property="og:title" content="Yuanzhong Chen (Adam) – Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://517adam.github.io/" />
+    <meta property="og:image" content="https://517adam.github.io/icon/og-img1.png" />
+    <meta
+      name="og:description"
+      content="Personal website of Yuanzhong Chen (Adam test), a Computer Science and Mathematics student at HKUST interested in machine learning, embodied AI, and medical image analysis research."
+    />
+  <link rel="manifest" href="./manifest.json" />
+    <script type="module" crossorigin src="./assets/index-Bdu8vyXm.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-oaGhOK_4.css">
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I'm</h3>
+      <h1>Yuanzhong Chen (Adam)</h1>
+      <ul>
+        <li>Computer Science & Mathematics Student</li>
+        <li>HKUST</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/yzchenadam/"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+                H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+                c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://github.com/517adam"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#blog" onclick="closeMenu()">Blog & Notes</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <hr style="border-color: rgba(10, 223, 238, 0.3); margin: 15px 0;">
+        <a href="#" onclick="openPhotoReplacer(); closeMenu(); return false;" style="color: #0adfee;">📸 Replace Photos</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+          Hi! I'm a third-year Computer Science and Mathematics double major at 
+          the Hong Kong University of Science and Technology (HKUST). I have also 
+          joined the International Honors Program at Stanford University. I am 
+          currently conducting research with Professor Chen Hao in medical image 
+          analysis.
+        </p>
+        <p>
+          Having taken several courses in machine learning, I am deeply interested 
+          in the field, both in its theoretical foundations and practical applications. 
+          Recently I am learning something related to embodied AI and robotics.
+        </p>
+        <p>
+          In my free time, I am interested in a large range of games including 
+          HoYoverse games, Terraria/Minecraft, The Binding of Isaac, etc. If you 
+          like these games, please come and communicate with me!
+        </p>
+      </section>
+
+      <section>
+        <h1 id="education">Education</h1>
+        <h2>The Hong Kong University of Science and Technology (HKUST)</h2>
+        <h3>2023-2027 (Expected)</h3>
+        <ul class="skills">
+          <li>Computer Science</li>
+          <li>Mathematics</li>
+          <li>Double Major</li>
+          <li>Year 3</li>
+        </ul>
+        <p>
+          Currently pursuing a double major in Computer Science and Mathematics. 
+          Also participating in the International Honors Program at Stanford University. 
+          Conducting research in medical image analysis under Professor Chen Hao.
+        </p>
+        <hr />
+        <h2>Hefei No.1 High School</h2>
+        <h3>Experimental Class of the Strengthening Basic Disciplines Plan</h3>
+        <ul class="skills">
+          <li>Mathematics</li>
+          <li>Science</li>
+          <li>Foundation Program</li>
+        </ul>
+        <p>
+          Completed high school education in the Strong Foundation Class program, 
+          focusing on advanced mathematics and science preparation for university studies.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="projects">Projects</h1>
+        
+        <h2>Pathology Report Generation from WSI (Ongoing)</h2>
+        <h3>2024-Present</h3>
+        <ul class="skills">
+          <li>Python</li>
+          <li>PyTorch</li>
+          <li>MLLM</li>
+          <li>Generative AI</li>
+          <li>Foundation Model</li>
+        </ul>
+        <p>
+          Research project focusing on generating pathology reports from Whole Slide Images 
+          using multimodal large language models and generative AI techniques. This work is 
+          conducted under the supervision of Professor Chen Hao in medical image analysis.
+        </p>
+        <hr />
+
+        <h2>Zero-shot Spatial Reasoning with LLM</h2>
+        <h3>2024</h3>
+        <ul class="skills">
+          <li>Python</li>
+          <li>PyTorch</li>
+          <li>LLM</li>
+          <li>vLLM</li>
+        </ul>
+        <p>
+          Course project for COMP5214 (Advanced Deep Learning Architecture). We assessed 
+          the ability of spatial reasoning of LLM, which performed better than some basic 
+          vLLM models. The LLM could generate more humanoid actions than traditional algorithms. 
+          Moreover, LLM performed better in multi-agent scenarios with collision possibilities.
+        </p>
+        <hr />
+
+        <h2>Robot Car from Scratch</h2>
+        <h3>2023</h3>
+        <ul class="skills">
+          <li>C</li>
+          <li>Arduino</li>
+          <li>Hardware</li>
+          <li>Electronics</li>
+        </ul>
+        <p>
+          Course project for ELEC1100 (Introduction to Electronics and Robotics). 
+          My first hands-on project where we built a line-following car from scratch 
+          using motors, breadboards, sensors, and other electronic components. This project 
+          gave me practical experience with embedded systems and robotics.
+        </p>
+        <hr />
+      </section>
+
+      <section>
+        <h1 id="blog">Blog & Notes</h1>
+        <p style="text-align: center">
+          Check out my
+          <a href="https://517adam.github.io/" target="_blank">
+            <u><b>Blog</b></u>
+          </a>
+          for technical posts, project updates, and daily thoughts.
+        </p>
+        <p style="text-align: center">
+          You can also find my class notes and study materials there, 
+          covering topics in machine learning, mathematics, computer science, and more.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on
+          <a href="https://www.linkedin.com/in/yzchenadam/" target="_blank">
+            <u><b>LinkedIn</b></u>
+          </a>
+          or
+          <a href="https://github.com/517adam/" target="_blank">
+            <u><b>GitHub</b></u>
+          </a>
+        </p>
+        <p style="text-align: center">
+          Email: <a href="mailto:ychenlg@connect.ust.hk">ychenlg@connect.ust.hk</a>
+        </p>
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    
+    <!-- 照片替换悬浮按钮 -->
+    <button id="photo-replacer-fab" onclick="openPhotoReplacer()" title="替换屏幕照片 (Ctrl+P)" style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgba(10, 223, 238, 0.15);
+      border: 2px solid #0adfee;
+      color: #0adfee;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(10, 223, 238, 0.2);
+      font-family: 'Courier New', monospace;
+    ">
+      📸
+    </button>
+    <footer>
+      <div>Developed + Designed by Yuanzhong Chen (Adam).</div>
+      <div>Computer design based on the Commodore PET 8296.</div>
+      <div>
+        Built on the traditional land of the Wurundjeri and Boon Wurrung peoples
+        of the Kulin nation. I pay my respect to Elders past, present and
+        emerging.
+      </div>
+      <div>
+        Sovereignty has never been ceded. It always was and always will be
+        Aboriginal land.
+      </div>
+      <div>COPYRIGHT © 2022-2025 Yuanzhong Chen (Adam).</div>
+    </footer>
+    <style>
+      #photo-replacer-fab:hover {
+        background: rgba(10, 223, 238, 0.25) !important;
+        box-shadow: 0 6px 20px rgba(10, 223, 238, 0.4) !important;
+        transform: translateY(-2px) scale(1.05) !important;
+        text-shadow: 0 0 10px rgba(10, 223, 238, 0.8) !important;
+      }
+      
+      #photo-replacer-fab:active {
+        transform: translateY(0px) scale(1) !important;
+        box-shadow: 0 2px 10px rgba(10, 223, 238, 0.3) !important;
+      }
+      
+      /* 响应式设计 */
+      @media (max-width: 768px) {
+        #photo-replacer-fab {
+          bottom: 15px !important;
+          right: 15px !important;
+          width: 50px !important;
+          height: 50px !important;
+          font-size: 20px !important;
+        }
+      }
+    </style>
+    
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+      
+      // 确保全局函数可用
+      function openPhotoReplacer() {
+        if (window.openPhotoReplacer && typeof window.openPhotoReplacer === 'function') {
+          window.openPhotoReplacer();
+        } else {
+          console.log('照片替换功能正在加载中...');
+        }
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EDNKHGV4HB");
+      gtag("event", "origin", { name: window.origin });
+    </script>
+  </body>
+</html>
